@@ -1,0 +1,99 @@
+.progress {
+    margin:5px auto 15px auto;
+    width: 28vw;
+    height: 10px;
+    background-color: white;
+  }
+  
+  .progress .progress__bar {
+    height: 100%;
+    width: 100%;
+    background-color: var(--main-color);
+    animation: fill-bar 3s 1;
+  }
+  .progress__bar_js{
+    height: 100%;
+    width: 85%;
+    background-color: var(--main-color);
+    animation: fill-bar_85 3s 1;
+  }
+  .progress__bar_py{
+    height: 100%;
+    width: 70%;
+    background-color: var(--main-color);
+    animation: fill-bar_70 3s 1;
+  }
+  @keyframes fill-bar {
+    from {width: 0%;}
+    to {width: 100%;}
+  }
+  @keyframes fill-bar_85 {
+    from {width: 0%;}
+    to {width: 85%;}
+  }
+  @keyframes fill-bar_70 {
+    from {width: 0%;}
+    to {width: 70%;}
+  }
+
+
+  .skills_section{
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    margin-top: 30px;
+    color: white;
+    width: 100%;
+    animation: slideRight 0.5s ease forwards;
+
+  }
+  .f_first_skill{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+ .skill_div{
+    margin-bottom: 30px;
+    padding-bottom: 5px;
+    border-bottom:2px solid var(--main-color) !important;
+    width:fit-content;
+    border:none;
+    position: relative;
+    cursor: pointer;
+ }
+
+ .skill_section_parent{
+    width: 100vw;
+    min-height: calc(100vh - 150px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+  .skill_div::after{
+    content: '';
+    position: absolute;
+    width: 0px;
+    height: 3px;
+    left: 50%;
+    bottom:0;
+    background-color: var(--main-color);
+    transition: all ease-in-out .2s;
+  }
+  .skill_div:hover::after{
+    width: 100%;
+    left: 0;
+  }
+
+  @media screen and (max-width:800px) {
+    .skills_section{
+        flex-direction: column;
+        border: 2px solid green;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .progress {
+        width: 300px;
+      }
+  }

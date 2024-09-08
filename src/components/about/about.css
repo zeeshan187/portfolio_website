@@ -1,0 +1,113 @@
+.about_page{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    align-items: center;
+    width: 100vw;
+    
+}
+.about_page_content{
+    width: 50vw;
+}
+.about_page_content h2{
+    margin: 20px 0px 5px 0px;
+    color: var(--main-color);
+    animation: slideLeft 1s ease forwards;
+}
+.about_page_content p{
+    font-family:'Courier New', Courier, monospace;
+}
+.about_page_content h5{
+    font-family:'Courier New', Courier, monospace;
+    color: white;
+    font-weight: 400;
+    width: 250px;
+    display: flex;
+    animation: slideTop 1s ease forwards;
+    padding-bottom: 2px;
+}
+.page_cont_para{
+    color: white;
+    font-size: 15px;
+    font-family:'Courier New', Courier, monospace;
+    border-bottom: 1px dotted white;
+    animation: slideRight 1s ease forwards;
+    padding-bottom: 10px;
+}
+.about_page_content h5 span{
+    font-family:'Courier New', Courier, monospace;
+    font-weight: 400;
+    margin-left: 10px;
+}
+.about_page_content h5 p{
+    font-weight: 600;
+}
+/* cicle animation */
+.about_page_inner_cont{
+    width: 350px;
+    height: 350px;
+    background: radial-gradient(180px, var(--main-color), transparent 90%);
+    position: relative;
+    border-radius: 50%;
+    border:1.5px solid var(--main-color);
+    animation: rotate 10s linear 1s infinite;
+}
+.about_page_inner_cont div:nth-child(1){
+    position: absolute;
+    left: 41%;
+    top: -9%;
+}
+.about_page_inner_cont div:nth-child(2){
+    position: absolute;
+    right: -8%;
+    top: 41.5%;
+}
+.about_page_inner_cont div:nth-child(3){
+    position: absolute;
+    bottom: -10%;
+    left: 41%;
+}
+.about_page_inner_cont div:nth-child(4){
+    position: absolute;
+    left: -8%;
+    top: 41%;
+}
+@media screen and (max-width:800px){
+    .about_page{
+        flex-direction: column;
+    }
+    .about_page_content{
+        width: 90vw;
+        margin-bottom: 50px;
+    }
+    .about_page_inner_cont{
+            width: 250px;
+            height: 250px;
+    }
+    .about_page_inner_cont div:nth-child(1){
+        position: absolute;
+        left: 41%;
+        top: -12%;
+    }
+    .about_page_inner_cont div:nth-child(2){
+        position: absolute;
+        right: -11%;
+        top: 41.5%;
+    }
+    .about_page_inner_cont div:nth-child(3){
+        position: absolute;
+        bottom: -12%;
+        left: 41%;
+    }
+    .about_page_inner_cont div:nth-child(4){
+        position: absolute;
+        left: -12%;
+        top: 41%;
+    }
+    
+}
+@keyframes rotate {
+    100%{
+        transform: rotate(360deg);
+    }
+}

@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
+:root{
+    --background-color:#1d1d1d;
+    --main-color:#ffdd40;
+    --text-color:#ffffff;
+    --nav-background-color:#181818;
+}
+*{
+    font-family: 'Roboto', sans-serif;
+}
+.app_main_div{
+    width: 100%;
+    overflow: hidden;
+}
+
+body::-webkit-scrollbar {
+    display: none; /* for Chrome, Safari, and Opera */
+  }
+  #particles{
+    z-index: 1000 !important;
+  }

@@ -1,0 +1,30 @@
+.resume_section{
+ display: flex;
+    width: 100%;
+    padding: 20px;
+}
+.experience, .education{
+    width: 50%;
+    gap: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.resume_heading{
+    color: white;
+    margin-top: 30px;
+    padding-bottom: 5px;
+    border-bottom:2px solid var(--main-color) !important;
+    width:fit-content;
+    border:none;
+    position: relative;
+    cursor: pointer;
+ }
+ @media screen and (max-width:800px) {
+    .resume_section{
+        flex-direction: column;
+    }
+    .experience, .education{
+        width: 100%;
+    }
+ }
