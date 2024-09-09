@@ -8,7 +8,7 @@ const Home = () => {
 });
   return (
     <>
-      <section id="hero">
+      <section id="hero ">
         <div className="hero container">
           <div className='hero_headings'>
             <h1 style={{zIndex:"1"}}>Hi, I am Zeeshan <span></span></h1>
